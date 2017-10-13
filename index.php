@@ -30,7 +30,7 @@ function ayfilmler_yardimci(){
 		<form action="admin.php?page=nazmiaras_yardimci" method="post">
 		<h1>Film Ekle</h1>
 		<label for="sinemelar_id">Film ID</label>
-		<input type="number" class="form-control" id="film_id" name="film_id" placeholder="Örnek : 242098"></br>
+		<input type="number" class="form-control" id="film_id" name="film_id" placeholder="Örnek : 242097"></br>
 		
 		<label>Dil Seçeneği</label><br/>
 		Türkçe Dublaj<input type="radio" class="form-control" id="turkce_dublaj" name="turkce_dublaj"></br>
