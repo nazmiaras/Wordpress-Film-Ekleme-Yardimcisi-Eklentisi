@@ -22,12 +22,12 @@ add_action("admin_menu","botMenu");
 function botMenu()
 
 {
-	add_menu_page( "Ana Sayfa", "Ay Filmler", 10, "ayfilmler_yardimci", "ayfilmler_yardimci", NULL, "145" );
+	add_menu_page( "Ana Sayfa", "Nazmi Aras", 10, "nazmiaras_yardimci", "nazmiaras_yardimci", NULL, "145" );
 }
 function ayfilmler_yardimci(){
 		if(!$_POST){
 		?>
-		<form action="admin.php?page=ayfilmler_yardimci" method="post">
+		<form action="admin.php?page=nazmiaras_yardimci" method="post">
 		<h1>Film Ekle</h1>
 		<label for="sinemelar_id">Film ID</label>
 		<input type="number" class="form-control" id="film_id" name="film_id" placeholder="Örnek : 242098"></br>
@@ -159,7 +159,7 @@ $kategori = $json_moviedb->genres;
 			add_post_meta($post_id,"embed1",$_POST['link_3']);
 		}?>
 		<input onclick="location.href='<?=$siteadresi;>/wp-admin/post.php?post=<?php echo $post_id;?>&action=edit'" type="button" name="filmi_onayla" id="filmi_onayla" value="Yazılara Git" />
-		<input onclick="location.href='<?=$siteadresi;>/wp-admin/admin.php?page=ayfilmler_yardimci'" type="button" name="yeni_film_ekle" id="yeni_film_ekle" value="Yeni Film Ekle" />
+		<input onclick="location.href='<?=$siteadresi;>/wp-admin/admin.php?page=nazmiaras_yardimci'" type="button" name="yeni_film_ekle" id="yeni_film_ekle" value="Yeni Film Ekle" />
 		<?php	
 		/**
 ** Öne çıkarılmış görseli ekliyeceğiz
